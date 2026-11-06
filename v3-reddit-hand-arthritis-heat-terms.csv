@@ -1,0 +1,11 @@
+bucket,definition,record_count,account_count,evidence_id
+selected_hand_records,Exact named-community selection plus hand/finger/knuckle/thumb/wrist/grip/jar expression; record-type/ID deduplication retains longest title and body.,3499,2005,[V3-01]; [V3-02]
+paraffin,Case-insensitive paraffin|wax bath|\bwax\b within selected hand records.,109,81,[V3-03]; [V3-04]
+warm_water_sink,Case-insensitive hot water|warm water|dishwater|dish water|sink|soak\w* (my )?hands within the selection.,70,58,[V3-05]; [V3-06]
+heating_pad,Case-insensitive heating pad|heat pad|electric pad within the selection.,66,65,[V3-07]; [V3-08]
+massager,Case-insensitive hand massager|massager|massage (device|machine)|hand ?spa; includes unqualified massager.,57,50,[V3-09]; [V3-10]
+heated_glove_only,"Case-insensitive heated glove|heated mitt|heat(ed|ing) mittens?|battery.{0,15}gloves?; excludes warmer-only matches.",21,19,[V3-11]; [V3-12]
+pressure_glove_discomfort,"Broad sentence-fragment proximity flag, including gloves and rings, not device-specific intolerance. (compression|gloves?|squeez|pressure|tight)[^.!?\n]{0,70}(hurt|pain|unbearable|can'?t (stand|tolerate|wear)|too (tight|much)|worse)|(can'?t|couldn'?t|unable to) (wear|tolerate|stand)[^.!?\n]{0,30}(compression|gloves?|tight|rings?)|(hurt|pain)[^.!?\n]{0,30}(to (put on|wear))[^.!?\n]{0,20}(compression|gloves?)",77,75,[V3-13]; [V3-14]
+hand_warmer,Case-insensitive hand warmer|handwarmer within selected records.,28,28,[V3-18]; [V3-19]
+heated_glove_or_hand_warmer,Logical OR of glove-only and warmer expressions; deduplicate records and account labels before counting the union.,47,45,[V3-20]; [V3-21]
+archive_before_selection,Distinct archived post/comment records before hand-community filtering; no corresponding account total is released.,28931,,[V3-17]

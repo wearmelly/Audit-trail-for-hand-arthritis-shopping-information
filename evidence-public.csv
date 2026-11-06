@@ -1,0 +1,70 @@
+kanit_id,sayi,ifade,public_file_column_filter
+[V3-01],3499,Selected hand-related records in named arthritis communities,data/v3-reddit-hand-arthritis-heat-terms.csv; bucket=selected_hand_records; column=record_count
+[V3-02],2005,Distinct nonblank nondeleted author labels in selection,data/v3-reddit-hand-arthritis-heat-terms.csv; bucket=selected_hand_records; column=account_count
+[V3-03],109,parafin matching records,data/v3-reddit-hand-arthritis-heat-terms.csv; bucket=paraffin; column=record_count
+[V3-04],81,parafin distinct author labels,data/v3-reddit-hand-arthritis-heat-terms.csv; bucket=paraffin; column=account_count
+[V3-05],70,sicak_su_lavabo matching records,data/v3-reddit-hand-arthritis-heat-terms.csv; bucket=warm_water_sink; column=record_count
+[V3-06],58,sicak_su_lavabo distinct author labels,data/v3-reddit-hand-arthritis-heat-terms.csv; bucket=warm_water_sink; column=account_count
+[V3-07],66,isitma_pedi matching records,data/v3-reddit-hand-arthritis-heat-terms.csv; bucket=heating_pad; column=record_count
+[V3-08],65,isitma_pedi distinct author labels,data/v3-reddit-hand-arthritis-heat-terms.csv; bucket=heating_pad; column=account_count
+[V3-09],57,masaj_cihazi matching records,data/v3-reddit-hand-arthritis-heat-terms.csv; bucket=massager; column=record_count
+[V3-10],50,masaj_cihazi distinct author labels,data/v3-reddit-hand-arthritis-heat-terms.csv; bucket=massager; column=account_count
+[V3-11],21,isitmali_eldiven matching records,data/v3-reddit-hand-arthritis-heat-terms.csv; bucket=heated_glove_only; column=record_count
+[V3-12],19,isitmali_eldiven distinct author labels,data/v3-reddit-hand-arthritis-heat-terms.csv; bucket=heated_glove_only; column=account_count
+[V3-13],77,compression_flag matching records,data/v3-reddit-hand-arthritis-heat-terms.csv; bucket=pressure_glove_discomfort; column=record_count
+[V3-14],75,compression_flag distinct author labels,data/v3-reddit-hand-arthritis-heat-terms.csv; bucket=pressure_glove_discomfort; column=account_count
+[V3-17],28931,Distinct archive records before hand-community filtering,data/v3-reddit-hand-arthritis-heat-terms.csv; bucket=archive_before_selection; column=record_count
+[V4-01],11,Hand massagers,data/v4-maker-disclosure-audit.csv; count distinct product_id where product_group=hand_massager
+[V4-02],8,Adjacent products,data/v4-maker-disclosure-audit.csv; count distinct product_id where product_group=adjacent_product
+[V4-03],19,All products,data/v4-maker-disclosure-audit.csv; count distinct product_id
+[V4-04],37,Fields per massager,data/v4-maker-disclosure-audit.csv; count distinct field per hand_massager product_id
+[V4-05],5,Fields per adjacent product,data/v4-maker-disclosure-audit.csv; count distinct field per adjacent_product product_id
+[V4-06],41,Combined distinct field vocabulary,data/v4-maker-disclosure-audit.csv; count distinct field
+[V4-07],407,Massager-field records,data/v4-maker-disclosure-audit.csv; count rows where product_group=hand_massager
+[V4-08],40,Adjacent-product records,data/v4-maker-disclosure-audit.csv; count rows where product_group=adjacent_product
+[V4-09],447,Accepted product-field records,data/v4-maker-disclosure-audit.csv; count rows
+[V4-10],0/11,isi_tek_basina explicit documentation count,data/v4-maker-disclosure-audit.csv; product_group=hand_massager AND field=isi_tek_basina; count status=stated / count all selected rows
+[V4-11],0/11,basinc_sayisal explicit documentation count,data/v4-maker-disclosure-audit.csv; product_group=hand_massager AND field=basinc_sayisal; count status=stated / count all selected rows
+[V4-12],11/11,isi_var explicit documentation count,data/v4-maker-disclosure-audit.csv; product_group=hand_massager AND field=isi_var; count status=stated / count all selected rows
+[V4-13],8/11,isi_tavan_f explicit documentation count,data/v4-maker-disclosure-audit.csv; product_group=hand_massager AND field=isi_tavan_f; count status=stated / count all selected rows
+[V4-14],11/11,iade_gun explicit documentation count,data/v4-maker-disclosure-audit.csv; product_group=hand_massager AND field=iade_gun; count status=stated / count all selected rows
+[V4-19],10/11,denenmis_iade explicit documentation count,data/v4-maker-disclosure-audit.csv; product_group=hand_massager AND field=denenmis_iade; count status=stated / count all selected rows
+[V4-20],8/11,iade_kargo explicit documentation count,data/v4-maker-disclosure-audit.csv; product_group=hand_massager AND field=iade_kargo; count status=stated / count all selected rows
+[V4-15],226,Accepted status stated,data/v4-maker-disclosure-audit.csv; count rows where status=stated
+[V4-16],201,Accepted status not-stated,data/v4-maker-disclosure-audit.csv; count rows where status=not-stated
+[V4-17],11,Accepted status conflict,data/v4-maker-disclosure-audit.csv; count rows where status=conflict
+[V4-18],9,Accepted status inaccessible,data/v4-maker-disclosure-audit.csv; count rows where status=inaccessible
+[V4-21],2026-10-18,Source-page capture date,data/v4-maker-disclosure-audit.csv; distinct captured_date
+[V4-80],108°F; 42°C,"Heat is a constant 108°F (42°C). Skin can burn with prolonged heat contact, especially with reduced sensation.
+If you have numbness, reduced sensation or neuropathy, keep the heat off or do not use this product.
+Do not use on a hot, swollen joint.
+This is not a treatment. If your hands go numb at night, or symptoms keep coming back, talk to your doctor.",V4-rapor.md; Product safety statement; Melly only
+[V4-90],2026-11-05,Brief and official-rule reading date,data/DATA-DICTIONARY.md; Release metadata and layout references; [V4-90]
+[V4-91],4.0,Preexisting compilation licenses are CC BY 4.0,data/LICENSE; compilation license
+[V4-92],2026-11-16,OSF new Project and Component creation cutoff,data/DATA-DICTIONARY.md; Release metadata and layout references; [V4-92]
+[V4-93],2027-02-19,OSF existing Projects become read-only,data/DATA-DICTIONARY.md; Release metadata and layout references; [V4-93]
+[V4-94],2:3; 1000 x 1500,Pinterest recommended vertical image canvas,data/DATA-DICTIONARY.md; Release metadata and layout references; [V4-94]
+[V5-01],2,N1 classified answer count,"V5-rapor.md; Warming sensitive hands: mitts appeared before devices; narrative observation only, underlying classified answers are not attached"
+[V5-02],2,N2 classified answer count,"V5-rapor.md; Returning after use: the combined condition remained unresolved; narrative observation only, underlying classified answers are not attached"
+[V5-03],$25,"Amount quoted by captured N1 answer, not current seller price","V5-rapor.md; Warming sensitive hands: mitts appeared before devices; narrative observation only, underlying classified answers are not attached"
+[V5-04],$33,"Amount quoted by captured N1 answer, not current seller price","V5-rapor.md; Warming sensitive hands: mitts appeared before devices; narrative observation only, underlying classified answers are not attached"
+[V5-05],2/2,Classified N1 answers lead with microwavable mitt alternatives,"V5-rapor.md; Warming sensitive hands: mitts appeared before devices; narrative observation only, underlying classified answers are not attached"
+[V5-06],0/2,Classified N2 answers verifying both used-item acceptance and seller-paid return freight,"V5-rapor.md; Returning after use: the combined condition remained unresolved; narrative observation only, underlying classified answers are not attached"
+[V5-07],4,Separate A1-G02 run count reported in later analysis,"V5-rapor.md; Returning after use: the combined condition remained unresolved; narrative observation only, underlying classified answers are not attached"
+[V5-08],0/4,Later analysis reports combined used-item and seller-paid-freight requirement unverified,"V5-rapor.md; Returning after use: the combined condition remained unresolved; narrative observation only, underlying classified answers are not attached"
+[V5-09],38,Arthritis-angle runs,V5-rapor.md; Published source-log context; reported historical observation; source-log rows/captures are not attached
+[V5-10],9,Arthritis-angle question identifiers,V5-rapor.md; Published source-log context; reported historical observation; source-log rows/captures are not attached
+[V5-11],19,Arthritis runs per engine,V5-rapor.md; Published source-log context; reported historical observation; source-log rows/captures are not attached
+[V5-12],755,Source rows joined to arthritis runs,V5-rapor.md; Published source-log context; reported historical observation; source-log rows/captures are not attached
+[V5-13],82,Subqueries linked to arthritis captures,V5-rapor.md; Published source-log context; reported historical observation; source-log rows/captures are not attached
+[V5-14],137,All historical published runs across topics,V5-rapor.md; Published source-log context; reported historical observation; source-log rows/captures are not attached
+[V5-15],2900,All historical published source records,V5-rapor.md; Published source-log context; reported historical observation; source-log rows/captures are not attached
+[V5-16],296,All historical published subqueries,V5-rapor.md; Published source-log context; reported historical observation; source-log rows/captures are not attached
+[V5-17],4,Arthritis runs flagged for non-US location traces,V5-rapor.md; Published source-log context; reported historical observation; source-log rows/captures are not attached
+[V5-18],2026-10-16,Collection date for older arthritis run slice,V5-rapor.md; Published source-log context; reported historical observation; source-log rows/captures are not attached
+[V5-19],2026-11-03,Later question-bank analysis date,V5-rapor.md; Distinct source collections; reported historical observation; source-log rows/captures are not attached
+[V3-18],28,Hand-warmer bucket records,data/v3-reddit-hand-arthritis-heat-terms.csv; bucket=hand_warmer; column=record_count
+[V3-19],28,Hand-warmer bucket accounts,data/v3-reddit-hand-arthritis-heat-terms.csv; bucket=hand_warmer; column=account_count
+[V3-20],47,"Heated glove OR hand warmer, deduplicated records",data/v3-reddit-hand-arthritis-heat-terms.csv; bucket=heated_glove_or_hand_warmer; column=record_count
+[V3-21],45,"Heated glove OR hand warmer, deduplicated accounts",data/v3-reddit-hand-arthritis-heat-terms.csv; bucket=heated_glove_or_hand_warmer; column=account_count
+[V4-99],not stated,Editor: Muhammed Veysel Erin; CSV tables begin with their column headers.,data/DATA-DICTIONARY.md; Release metadata and layout references; [V4-99]
